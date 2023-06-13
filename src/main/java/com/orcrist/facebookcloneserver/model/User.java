@@ -8,6 +8,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashSet;
+import java.util.Set;
 
 public class User {
 
@@ -35,7 +36,7 @@ public class User {
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     //@ToString.Exclude
-    private Set<Friend> friends = new HashSet<>()
+    private Set<Friend> friends = new HashSet<>();
 
     //private Set<Following> followings = new HashSet<>();
     //private Set<Follower> followers = new HashSet<>();
