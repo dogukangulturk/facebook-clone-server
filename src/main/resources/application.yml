@@ -1,2 +1,13 @@
+# Spring Boot configuration
+spring:
+  # Security configuration
+  security:
+    user:
+      name: user
+      password: user
+    jwt:
+      secret: some-very-hard-secret-here
+      expireAt: 900000
+
 client:
   base_url: http://localhost:3000
