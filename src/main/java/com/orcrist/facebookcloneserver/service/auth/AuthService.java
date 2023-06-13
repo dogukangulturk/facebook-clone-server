@@ -3,6 +3,7 @@ package com.orcrist.facebookcloneserver.service.auth;
 import com.orcrist.facebookcloneserver.repository.RoleRepository;
 import com.orcrist.facebookcloneserver.repository.UserRepository;
 import com.orcrist.facebookcloneserver.util.GenerateUsername;
+import com.orcrist.facebookcloneserver.util.RandomTokenGenerator;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.password.PasswordEncoder;
