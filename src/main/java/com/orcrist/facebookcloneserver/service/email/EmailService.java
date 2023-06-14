@@ -32,7 +32,7 @@ public class EmailService {
         return "Email successfully sent!";
     }
 
-    public String sendEmailWithAttachment(EmailDetails details) throws MailException, MessagingException {
+    public String sendEmailWithAttachment(EmailDetails details) throws MessagingException {
         MimeMessage message = javaMailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message,
                 MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED,
